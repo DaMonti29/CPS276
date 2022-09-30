@@ -2,18 +2,25 @@
 $name = "Dan Monti";
 
 $footer = "My Web Page 2022";
-
-$string =  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Vivamus feugiat mollis dolor at bibendum. 
-In congue maximus ligula, ut faucibus mi accumsan at. 
-Vestibulum sagittis tortor eget dui ultricies, a vulputate lacus faucibus. 
-Fusce aliquet bibendum erat, sed bibendum eros cursus eu. 
-Nulla at neque rhoncus, ultricies odio at, accumsan elit. 
-Proin in turpis eu leo dapibus pulvinar. Vivamus viverra massa ut enim fringilla ultricies. 
-Donec in enim blandit, iaculis nulla quis, egestas elit. Nullam ut enim id erat bibendum finibus nec ac eros. 
-Nulla malesuada ex facilisis ultrices rhoncus. Nullam in euismod nisl. Donec pulvinar ex sit amet aliquet egestas.";
+$string = null;
 
 
+
+for ($i = 0; $i < 3; $i++){
+
+	$string .= "<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	Vivamus feugiat mollis dolor at bibendum. 
+	In congue maximus ligula, ut faucibus mi accumsan at. 
+	Vestibulum sagittis tortor eget dui ultricies, a vulputate lacus faucibus. 
+	Fusce aliquet bibendum erat, sed bibendum eros cursus eu. 
+	Nulla at neque rhoncus, ultricies odio at, accumsan elit. 
+	Proin in turpis eu leo dapibus pulvinar. Vivamus viverra massa ut enim fringilla ultricies. 
+	Donec in enim blandit, iaculis nulla quis, egestas elit. Nullam ut enim id erat bibendum finibus nec ac eros. 
+	Nulla malesuada ex facilisis ultrices rhoncus. Nullam in euismod nisl. Donec pulvinar ex sit amet aliquet egestas. <br>";
+
+
+
+}
 ?>
 
 
@@ -42,7 +49,7 @@ Nulla malesuada ex facilisis ultrices rhoncus. Nullam in euismod nisl. Donec pul
 		</header>
 		<main>
 			<h2>My name is <?php echo $name;?> </h2>
-			<p> <?php echo $string;?> </p>
+			<p> <?php  echo "$string <br>";  ?>  </p>
 			
 		</main>
 		<footer>
