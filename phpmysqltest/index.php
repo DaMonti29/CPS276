@@ -1,11 +1,24 @@
 
-class Phone {
-public $color;
-public $manufacturer;
-static public $numberSold = 13;
-}
-Phone::$numberSold+=5;
-echo Phone::$numberSold;
+<?php
+
+$a = "dan monti";
+
+echo $a;
+
+
+
+$string = <<<STR
+This is a heredoc multi-line string with "quotes", the double quotes render because we
+are using the heredoc, where both 'single' and "double quotes" render;
+STR;
+
+echo $string;
+?>
+
+
+
+
+
 
 
 <!DOCTYPE html>
@@ -21,10 +34,7 @@ echo Phone::$numberSold;
 <body>
 <!doctype html>
 <html lang="en">
-  <<body class="container">
-
-  Phone::$numberSold+=5;
-echo Phone::$numberSold;
+  <body class="container">
 
   <body>
     
