@@ -28,7 +28,7 @@ for ($i = 0; $i < 3; $i++){
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>My Web Page</title>
+	<title>Ex2</title>
 	<style>
 		* {margin: 0; padding: 0;}
 		body {font: 120%/1.5 sans-serif;}
