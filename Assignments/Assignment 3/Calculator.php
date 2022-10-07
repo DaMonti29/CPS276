@@ -25,7 +25,7 @@ if($operator == "*"){
 }
 if($operator == "/"){
 if($num2 != 0)
-  return "The product of the numbers is ".($num1 * $num2)."</br>";
+  return "The division of the numbers is ".($num1 / $num2)."</br>";
   else return "Cannot divide by zero<br>";
     }
   }
