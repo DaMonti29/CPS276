@@ -1,3 +1,24 @@
+<?php
+
+class Calculator {
+
+
+  public function getOperator(){
+        
+
+
+
+
+  }
+
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,22 +35,11 @@
 <body class="container">
 <body>   
 <main>  
-<table border = "1">
+
   <?php
-
-   $i = 1;
-
-    while ($i <= 15) {
-      echo "<tr></tr>";
-         $i++;
-   
-        for ($j = 1; $j <= 5; $j++){
-          echo "<td> Row $i Cell $j</td>";
-          }  
-         }
-      ?>
-    </table>
-      </main>
+  echo  $Calculator->calc("+", 10, 2); //will output The sum of the numbers is 12
+  ?>
+    </main>
   </body>
 </html>
 </body>
