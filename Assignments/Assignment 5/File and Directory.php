@@ -1,36 +1,44 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Ex2</title>
-	<style>
-		* {margin: 0; padding: 0;}
-		body {font: 120%/1.5 sans-serif;}
-		#wrapper {width: 1000px; margin: 0 auto; border: 1px solid black;}
-		header {background: green; height: 150px; padding: 20px;}
-		header h1 {color: white;}
-		main {padding: 10px;}
-		main h2 {margin: 15px 0;}
-		main p {margin-bottom: 15px;}
-		footer {background: #eee; padding: 10px 0; text-align: center}
-		footer p {font-size: .8em;}
-	</style>
-</head>
-<body>
-	<div id="wrapper">
-		<header>
-			<h1>My Web Page</h1>
-		</header>
-		<main>
-			<h2>My name is <?php echo $name;?> </h2>
-			<p> <?php  echo "$string <br>";  ?>  </p>
-			
-		</main>
-		<footer>
-			<p> <?php echo $footer;?> </p>
-		</footer>
-	</div>
-	
-</body>
+<?php
+    function createDirectory() {
+        $add = $_POST["add"];
+        mkdir("".$add);
+        echo "<script type = 'text/javascript'>alert('Done!');</script>";
+    }
+?>
+<html>
+    <head>
+        <title>
+            File and Directory Assignment
+        </title>
+    </head>
+      
+    <body>
+    <?php
+        if (!isset($_POST['submit'])) {
+    ?>
+        <form action = "" method = "post">
+              
+            <table> 
+            <tr>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">File Name</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">File Contents</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            </tr>
+            </table>
+        </form>
+    <?php 
+        }
+        else {
+            createDirectory();
+        }
+    ?>
+    </body>
 </html>
